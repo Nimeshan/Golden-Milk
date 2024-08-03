@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.hero img {
+  margin-left: 90px;
+  max-width: 100%; 
+  height: 580px;    
+  width: 480px;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h1, .hero h4{
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero h1{
+  font-size: 67px;
+  font-weight: 550;
+  padding-left: 65px;
+}
+
+.hero h4 {
+  font-size: 24px;
+  font-weight: lighter;
+  padding-left: 94px;
+  margin-left: 8px;
+}
+
+.cta-button{
+  background-color: limegreen;
+  font-size: 16px;  
+  margin-top: 18px;
+  padding: 14px 22px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 98px;
+  color: #fff;
+}
+
+.cta-button:hover{
+  background-color: #80d75b;
+  color: black;
+}
+
+.hero h1:hover {
+  color: limegreen;
+}
+
+.hero h4:hover {
+  color: limegreen;
+}
+
+div .hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("./Assets/Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero h1, .hero h4 {
+    padding-left: 0;
+    margin-top: 10px;
   }
+
+  .cta-button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero h4 {
+    font-size: 18px;
+    }
+
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
 }

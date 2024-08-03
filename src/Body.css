@@ -1,0 +1,188 @@
+h1, .GMH {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+
+h1, .GMH:hover {
+    color: lime;
+}
+
+.ImageSectone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ISone {
+    width: 450px;
+    height: 450px;
+    margin-right: 90px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.text-container h3 {
+    font-size: 36px;
+    color: limegreen;
+}
+
+.text-container h3:hover {
+    color: black;
+}
+
+.text-container h4 {
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.text-container h4:hover {
+    color: limegreen;
+}
+
+.text-container ul {
+    margin: 0;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.text-container li {
+    margin-bottom: 5px;
+}
+
+.text-container li:hover {
+    color: limegreen;
+}
+
+.ImageSecttwo {
+    display: flex; 
+    align-items: flex-start; 
+    margin: 40px 0; 
+}
+
+.IStwo {
+    width: 450px; 
+    height: 550px; 
+    margin-left: 90px; 
+    margin-top: 20px;
+}
+
+.text-container-two {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
+.text-container-two h3 {
+    font-size: 36px;
+    color: limegreen;
+}
+
+.text-container-two h3:hover {
+    color: black;
+}
+
+.text-container-two h4 {
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.text-container-two h4:hover {
+    color: limegreen;
+}
+
+.ImageSectthree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text-container-three {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 60px;   
+}
+
+.ISthree {
+    height: 420px;
+    width: 600px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+.text-container-three h3 {
+    color: limegreen;
+    font-size: 36px;
+}
+
+.text-container-three h3:hover {
+    color: black;
+}
+
+.text-container-three h4 {
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.text-container-three h4:hover {
+    color: limegreen;
+}
+
+
+@media (max-width: 768px) {
+    h1, .GMH {
+        font-size: 36px;
+    }
+
+    .ISone, .IStwo, .ISthree {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .text-container, .text-container-two, .text-container-three {
+        max-width: 350px;
+    }
+
+    .text-container h3, .text-container-two h3, .text-container-three h3 {
+        font-size: 28px;
+    }
+
+    .text-container h4, .text-container-two h4, .text-container-three h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .text-container h3, .text-container-two h3, .text-container-three h3 {
+        font-size: 24px;
+    }
+
+    .text-container h4, .text-container-two h4, .text-container-three h4 {
+        font-size: 16px;
+    }
+
+    .text-container, .text-container-two, .text-container-three {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    h1, .GMH {
+        font-size: 28px;
+    }
+
+    .ISone, .IStwo, .ISthree {
+        width: 100%;
+        max-width: 100%;
+    }
+}

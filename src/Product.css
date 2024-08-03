@@ -1,0 +1,150 @@
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Main img {
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    max-width: 100%; 
+    height: 580px;    
+    width: 480px;
+}
+
+.Second h2 {
+    color: limegreen;
+    font-size: 44px;
+    margin-top: -140px;
+    margin-left: 40px;
+}
+
+.Second h2:hover {
+    color: black;
+}
+
+.Second h4 {
+    margin-top: -30px;
+    margin-left: 47px;
+    font-size: 28px;
+}
+
+.Second h4:hover {
+    color: limegreen;
+}
+
+.Second p{
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 620;
+}
+
+.Second p:hover {
+    color: limegreen;
+}
+
+.POption {
+    margin-left: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: limegreen;
+    border-color: limegreen;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.POption:hover {
+    color: black;
+    border-color: black;
+}
+
+.BButton {
+    background-color: limegreen;
+    color: white;
+    font-size: 20px;
+    padding: 11px 37px;
+    text-align: center;
+}
+
+.BButton:hover {
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Main img {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Second h2 {
+        font-size: 32px;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Second h4 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Second p {
+        font-size: 14px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .POption {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .BButton {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Second h2 {
+        font-size: 28px;
+    }
+
+    .Second h4 {
+        font-size: 20px;
+    }
+
+    .Second p {
+        font-size: 12px;
+    }
+
+    .POption {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .BButton {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
